@@ -47,7 +47,7 @@ $(document).ready(function(){
 
     $('.collapsible').collapsible();
 
-    $('#editor').trumbowyg();
+    /*$('#editor').trumbowyg();*/
 
     $('.datepicker').pickadate({
         selectMonths: true, // Creates a dropdown to control month
