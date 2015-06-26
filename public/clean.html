@@ -1,0 +1,82 @@
+@extends('layouts.master')
+
+@section('content')
+    <!-- content row -->
+    <div class="row content-holder" ">
+        <div class="col-md-10 col-md-offset-1 clear-padding">
+            <!-- left panel -->
+            <div class="col-md-9 clear-padding product-section left">
+               <div class="row">
+               		<div class = "col-md-5 col-md-offset-4">
+               			 <p class="product-title">{{$product->name}}</p>
+               
+               			 {{HTML::image($product -> picture)}}
+               			 <div class="row details-btn">
+               			 	<button class="btn btn-details pull-left">Ksh. {{$product -> price}}</button>
+               			 <a class="btn btn-success add-to-cart pull-right" href="http://bhm.co.ke/product/{{$product -> id}}/addToCart">
+                                                <span class="glyphicon glyphicon-shopping-cart glyphicon-shopping-cart-sm"></span>Add
+                                                to cart
+                                            </a>
+               			 </div>
+               		</div>
+               		<div class ="col-md-10 col-md-offset-1">
+               		 <ul class="nav nav-tabs" role="tablist">
+			  
+			    <li role="presentation" class="active"><a href="#desc"  aria-controls="desc" role="tab" data-toggle="tab">Description</a></li>
+			    <li role="presentation"><a href="#cons" aria-controls="cons" role="tab" data-toggle="tab">Consumables</a></li>
+		
+			  </ul>
+			  	<div class="tab-content">
+				    
+				    <div id="desc" role="tabpanel" class = "details tab-pane active">
+				    	<div id=""  class=""> @foreach($product->features as $feature)
+                                        {{$feature ->feature}}
+                                    @endforeach
+                                    </div>
+				    {{$product -> details}}
+				
+				    </div>
+					<div id="cons" role="tabpanel" class = "tab-pane">Consumables
+						
+						<div class="row consumable">
+							<table class="table">
+							    <thead>
+							      <tr>
+							        <th></th>
+							        <th></th>
+							        <th></th>
+							      </tr>
+							    </thead>
+							    <tbody>
+							    @foreach($consumables as $consumable)
+							    	<tr class ="consumable">
+								        <td><p class="name">{{$consumable -> name}}</p><br>{{HTML::image($consumable -> path)}}</td>
+								        <td>{{$consumable -> features}}</td>
+								        <td>
+								        	<button class="btn btn-details pull-left">Ksh. {{$product -> price}}</button>
+               			 <a class="btn btn-success add-to-cart" href="http://bhm.co.ke/product/{{$product -> id}}/addToCart">
+                                                <span class="glyphicon glyphicon-shopping-cart glyphicon-shopping-cart-sm"></span>Add
+                                                to cart
+                                            </a>
+								        </td>
+							      	</tr>
+							    @endforeach    
+							    </tbody>
+							  </table>
+						
+						
+					</div>
+				  </div>
+          			</div>
+              		 </div>
+                
+                
+            </div>
+            <!-- end left panel -->
+
+            <!-- yield right section-->
+            @include('layouts.right')
+        </div>
+    </div>
+    <!-- content row -->
+@stop

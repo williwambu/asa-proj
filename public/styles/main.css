@@ -1,0 +1,414 @@
+body {
+    background: #ffffff;
+}
+
+.expand {
+    width: 140px !important;
+    text-align: center;
+}
+
+nav ul a {
+    font-size: 1rem;
+}
+
+.nav-wrapper {
+    color: #000000 !important;
+}
+
+nav {
+    background-color: #0099CB !important;
+    z-index: 100000;
+}
+
+.brand-logo {
+    height: 100% !important;
+    position: relative;
+    width: 70px;
+}
+
+.dropdown-content li > a, .dropdown-content li > span {
+    color: #000000;
+    font-size: 1rem
+
+}
+
+.dropdown-content li > a:hover, .dropdown-content li > span:hover {
+    color: #ffffff;
+    background-color: #0099CB;
+}
+
+.side-nav {
+    background-color: #0099CB;
+}
+
+.side-nav a {
+    color: #ffffff;
+}
+
+.collapsible-body a, .collapsible-body a.active {
+    color: #000000 !important;
+}
+
+.side-nav li:hover, .side-nav li.active {
+    background-color: #0099CB !important;
+}
+.slider .indicators .indicator-item{
+    border-radius: 0 !important;
+}
+.slider .indicators .indicator-item.active{
+    background-color: #569FBF !important;
+    border-radius: 0 !important;
+}
+
+.slider .slides {
+    background-color: #ffffff;
+}
+
+nav .nav-wrapper {
+    z-index: 1000;
+}
+
+.carousel {
+    padding: 0 !important;
+}
+
+/*** footer **/
+footer.page-footer {
+    background-color: #0099CB !important;
+}
+.fb,.twitter,.google{
+    z-index: 10000;
+}
+
+.fb {
+    color: #3A5795 !important;
+}
+
+
+.fb:hover {
+    color: #f7f7f7 !important;
+}
+
+.twitter {
+    color: #00B0ED !important;
+}
+
+.twitter:hover {
+    color: #ffffff !important;
+}
+
+.google {
+    color: #ffffff !important;
+}
+
+.google:hover {
+    color: #d34836 !important;
+}
+
+.ig {
+    color: #3f729b
+}
+
+.ig:hover {
+    color: #ffffff;
+}
+
+.colored-line {
+    height: 1px;
+    background-color: #0099CB;
+    display: inline-block;
+    width: 15%;
+    margin-bottom: 0 !important;
+}
+
+.c-header {
+    font-size: 1.9em;
+    color: #222222;
+    text-transform: uppercase;
+    font-style: oblique;
+}
+
+.promo-caption {
+    font-size: 1.6rem;
+}
+
+.promo-icon {
+    font-size: 9rem !important;
+    color: #ffffff;
+}
+
+.c-content {
+    font-size: 1.1rem !important;
+}
+.c-card{
+    background-color: #569FBF !important;
+}
+
+.c-card-title {
+
+}
+
+.contact {
+    font-size: 1rem !important;
+}
+
+.rocket {
+    font-size: 15rem !important;
+}
+
+.grow p {
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+.more {
+    background-color: #0099CB;
+    color: #ffffff !important;
+}
+
+.more:hover {
+
+    background-color: #0099CB;
+}
+
+.event {
+    padding: 0.2rem 0 0.2rem 0;
+}
+
+.event p {
+    font-size: 1.1rem !important;
+    font-weight: 300;
+}
+
+.c-card {
+    background-color: #16A085;
+}
+
+.profile-img {
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+}
+
+.holder {
+
+}
+
+.quot {
+
+}
+
+.desc {
+    font-style: italic;
+    font-size: 1.2rem !important;
+    font-weight: 300;
+
+}
+.profile > .card {
+    background-color: #90caf9;
+}
+
+.profile > .card.card-content {
+
+}
+
+.name {
+    color: #0099CB !important;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+/* smalll screens */
+@media (max-width: 600px ) {
+
+}
+
+/* medium screens*/
+@media (max-width: 992px) {
+
+}
+
+/* larger screens*/
+@media (min-width: 992px) {
+    .profile {
+        margin-left: 4rem !important;
+        margin-right: 1.2rem !important;
+    }
+}
+
+.unoSliderNav span {
+    font-size: 5rem !important;
+
+}
+
+.unoSliderNav span.current {
+    color: #0099CB !important;
+}
+.slider-content{
+    
+}
+#slider h5 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+
+#slider h6{
+    color: #000000 !important;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.unoSlider ul{
+    min-height: 200px !important;
+}
+.sliderView{
+    height: 14rem !important;
+}
+.gallery img.materialboxed{
+    height:150px;
+    width: 270px;
+}
+.phone,.email{
+    font-size: 1.2rem;
+}
+.ico{
+    padding: 5px;
+}
+.team-img{
+    width: 14rem;
+    height: 14rem;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+.member-name{
+    font-size: 1.3rem;
+}
+.links li{
+    font-size: 1.1rem;
+    padding-bottom: 0.4rem;
+}
+.slider .slides li img{
+
+}
+.sponsors-img{
+    width: 10rem;
+    padding: 1rem;
+    min-height: 6rem;
+}
+.sponsors-name{
+    position:relative;
+    bottom: 0 !important;
+}
+.preface{
+    font-size:1.6rem;
+}
+.bxslider li img{
+   width: 100%;
+}
+.bx-wrapper{
+    margin-bottom: 0 !important;
+}
+.bx-wrapper img{
+    height: 31rem !important;
+}
+.bx-wrapper .bx-viewport{
+    box-shadow: none !important;
+    border: none !important;
+    left: 0 !important;
+    transform: none !important;
+}
+ul.bxslider{
+    margin: 0 !important;
+}
+.bx-wrapper .bx-pager.bx-default-pager a.active{
+    background: #0099CB !important;
+}
+
+.fb-btn,.google-btn,.fb-btn:hover,.google-btn:hover{
+    color:#ffffff;
+    margin-bottom: 0.5rem !important;
+
+    height: auto !important;
+}
+.fb-btn,.fb-btn:hover{
+    background-color:#49659F;
+}
+
+.google-btn,.google-btn:hover{
+    background-color: #D8442F;
+}
+.fb-btn i,.google-btn i{
+
+}
+.header-wrapper{
+    height:6rem;
+    background-color: #0099CB ;
+}
+
+.menu-btn{
+    color:white;
+    font-size: 2rem ;
+}
+.user-img{
+    border-radius:50%;
+    height: 6rem;
+    width: 6rem;
+}
+
+ul.side-nav.fixed li.logo {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #ddd;
+
+}
+ul.side-nav.fixed li.logo img{
+    height: 10rem;
+    width: 10rem;
+}
+.nav-wrapper-portal{
+    text-align:center;
+    height: 100%;
+    line-height: 6rem;
+}
+.page-title{
+    color:#ffffff;
+    font-size: 2rem;
+}
+main.content-area{
+    padding-left: 200px;
+}
+.custom-header{
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 20px;
+}
+.links i{
+    padding-right:  0.3rem;
+}
+.sponsor-small img{
+    width: 100%;
+    height: 3rem;
+}
+.inv-container .inv-img-c{
+    background-color: lightgrey;
+    border-radius: 50%;
+    height: 12rem;
+    width: 12rem;
+    padding: 1.5rem;
+    margin: 0 auto;
+}
+.inv-container.inv-img-c img{
+    width: 100%;
+    height: 100%;
+
+}
+.inv-container p{
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
