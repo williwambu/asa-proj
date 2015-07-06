@@ -1,7 +1,8 @@
 <!doctype html>
-<html ng-app="app">
+<html >
 <head>
     <meta charset="utf-8">
+    <base />
     <title>ASA | Accounting Students Association</title>
     <meta name="description" content="Accounting Students Association">
     <meta name="viewport" content="width=device-width initial-scale=1,maximum-scale=1.0, user-scalable=no">
@@ -14,20 +15,22 @@
     <link href="styles/animate.min.css" rel="stylesheet" type="text/css">
     <link href="styles/jquery.bxslider.css" rel="stylesheet">
 </head>
-<body>
+<body ng-app="app" ng-controller="homeCtrl">
 <!--[if lt IE 10]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
 <![endif]-->
 <header>
-    <div class="navbar-fixed" ng-controller="homeCtrl">
+    <div class="navbar-fixed" >
         <nav>
             <div class="nav-wrapper">
-                <a href="#/">
+                <a href="/">
                     <img src="images/logo.jpg" class="brand-logo"/>
                 </a>
+                <h5 class="hide-on-med-and-down left site-title white-text">Accounting Students Association</h5>
                 <ul id="slide-out" class="side-nav right">
-                    <li><a ng-href="#/">Home</a></li>
+
+                    <li><a href="/">Home</a></li>
                     <li class="no-padding">
                         <ul class="collapsible collapsible-accordion">
                             <li>
@@ -35,33 +38,36 @@
 
                                 <div class="collapsible-body">
                                     <ul>
-                                        <li><a ng-href="#executive">Team 1</a></li>
-                                        <li><a ng-href="#directors">Team 2</a></li>
+                                        <li><a href="/executive">Team 1</a></li>
+                                        <li><a href="/directors">Team 2</a></li>
                                     </ul>
                                 </div>
                             </li>
                         </ul>
                     </li>
 
-                    <li><a ng-href="#gallery">Gallery</a></li>
+                    <li><a href="/gallery">Gallery</a></li>
                     <li><a href="#login-modal" data-target="login-modal" ng-click="open()">Login</a></li>
-                    <li><a ng-href="#contact">Contact Us</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact-us">Contact Us</a></li>
                 </ul>
                 <!-- end sidebar -->
                 <!-- nav menu-->
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="#/">Home</a></li>
+
+                    <li><a href="/">Home</a></li>
                     <li><a class="dropdown-button" data-activates="team">ASA Team<i
                                 class="mdi-navigation-arrow-drop-down right"></i></a>
                         <ul id='team' class='dropdown-content'>
-                            <li><a ng-href="#executive">Team 1</a></li>
+                            <li><a href="/executive">Team 1</a></li>
                             <li class="divider"></li>
-                            <li><a ng-href="#directors">Team 2</a></li>
+                            <li><a href="/directors">Team 2</a></li>
                         </ul>
                     </li>
-                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="/gallery">Gallery</a></li>
                     <li><a href="#login-modal" data-target="login-modal" ng-click="open()">Login</a></li>
-                    <li><a href="#contact">Contacts Us</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact-us">Contacts Us</a></li>
 
                 </ul>
                 <!-- nav menu -->
@@ -71,8 +77,8 @@
     </div>
 </header>
 <main>
-    <div ng-view>
-
+    <div >
+        <?php echo $child ?>
     </div>
 </main>
 <div class="row">
@@ -212,6 +218,21 @@
         h.appendChild(s)
     }
 </script>
+<script>window.twttr = (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+            t = window.twttr || {};
+        if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+
+        t._e = [];
+        t.ready = function(f) {
+            t._e.push(f);
+        };
+
+        return t;
+    }(document, "script", "twitter-wjs"));</script>
 </body>
 </html>
-

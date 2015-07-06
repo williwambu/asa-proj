@@ -21,13 +21,16 @@ class AdminController extends BaseController {
 
         return Response::json(array('message'=>'A new admin created.'));
     }
-
+    public function getCVs(){
+        $cvs = CV::all();
+        return $cvs;
+    }
     public function login(){
         $email = Input::get('email');
         $password = Input::get('password');
 
         if(Auth::attempt(array('email'=>$email,'password'=>$password))){
-            return View::make('layouts.admin-home');
+            return View::make('layouts.admin-home') ->with(array('cvs'=>$this -> getCVs()));
         }
         return Response::json(array('message'=>'Access denied'),401);
 

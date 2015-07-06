@@ -13,6 +13,16 @@
 
 Route::get('/',array('uses'=>'HomeController@showWelcome'));
 
+Route::get('executive',array('uses' => 'SiteRoutesController@executive'));
+
+Route::get('directors',array('uses' => 'SiteRoutesController@directors'));
+
+Route::get('gallery',array('uses' => 'SiteRoutesController@gallery'));
+
+Route::get('contact-us',array('uses' => 'SiteRoutesController@contact'));
+
+Route::get('about',array('uses' => 'SiteRoutesController@about', ));
+
 Route::get('login-fb/',array('uses' => 'HomeController@loginWithFacebook'));
 
 Route::get('login-google/',array('uses'=>'HomeController@loginWithGoogle'));
@@ -30,7 +40,9 @@ Route::get('callback',function(){
  * Admin Routes
  */
 
-Route::get('/admin',array('uses'=>'AdminController@loginPanel','as'=>'login-panel'));
+Route::get('admin',array('uses'=>'AdminController@loginPanel','as'=>'login-panel'));
+
+Route::get('login',array('uses'=>'AdminController@loginPanel'));
 
 Route::get('events/all',array('uses'=>'EventsController@all','as'=>'all-events'));
 
@@ -55,3 +67,15 @@ Route::get('admin',array('before'=>'auth','uses'=>'AdminController@admin','as'=>
 Route::get('event/new',array('uses'=>'EventsController@createEventForm','as'=>'create-event-form'));
 
 Route::get('admin/events',array('uses'=>'EventsController@adminAll','as'=>'admin-all'));
+
+Route::post('upload-cv',array('uses'=>'HomeController@saveCv','as'=>'upload-cv'));
+
+Route::get('admin/uploaded_cvs/{file_name}',function($file_name){
+    $parts = explode($file_name,'.');
+    $ext = $parts[count($parts) - 1]."'";
+
+    $file = public_path().'/uploaded_cvs/'.$file_name;
+    return Response::download($file,$file_name);
+});
+
+Route::get('/CVs.zip',array('uses'=>'HomeController@createZip','as'=>'create-zip'));

@@ -1,5 +1,4 @@
 <?php
-
 class HomeController extends BaseController {
 
 	/*
@@ -17,7 +16,7 @@ class HomeController extends BaseController {
 
 	public function showWelcome()
 	{
-		return View::make('main');
+		return View::make('main') -> nest('child','layouts.templates.home');
 	}
 
     /**
@@ -55,8 +54,6 @@ class HomeController extends BaseController {
             $user_details['id'] = $result['id'];
             $user_details['name'] = $result['name'];
             $user_details['picture'] = 'http://graph.facebook.com/'.$result['id'].'/picture?type=large';
-
-
 
             return View::make('portal') -> with(array('user_details'=>$user_details));
         }
@@ -97,6 +94,8 @@ class HomeController extends BaseController {
             $user_details['name'] = $result['name'];
             $user_details['picture'] = $result['picture'];
 
+
+
             return View::make('portal') -> with(array('user_details'=>$user_details));
         }
         // if not ask for permission first
@@ -109,8 +108,26 @@ class HomeController extends BaseController {
         }
     }
 
-    public function addToMailingList(){
+    public function saveCv(){
+        $name = Input::get('name');
+        $cv = Input::file('cv');
+        $destination_path = public_path().'/uploaded_cvs';
+        $file_path = $name.'.'.$cv->getClientOriginalExtension();
+        $cv -> move($destination_path,$file_path);
 
+        $theCv = new CV;
+        $theCv -> name = $name;
+        $theCv -> path = 'uploaded_cvs/'.$file_path;
+        $theCv -> save();
+        return 'Cv uploaded ';
+    }
+
+    public function createZip(){
+        $path = public_path().'/CVs.zip';
+        $files = glob('public/uploaded_cvs/*');
+        Zipper::make($path)->add($files);
+
+        return Response::download($path,'CVs.zip');
     }
 
 }

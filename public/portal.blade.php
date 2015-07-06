@@ -14,7 +14,7 @@
     <link href="styles/animate.min.css" rel="stylesheet" type="text/css">
     <link href="styles/jquery.bxslider.css" rel="stylesheet">
 </head>
-<body>
+<body ng-controller="portalCtrl">
 <!--[if lt IE 10]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
@@ -38,7 +38,7 @@
             </a>
             <p class="white-text">{{$user_details["name"]}}</p>
         </li>
-        <li><a href="#!" class="white-text">Upload your CV <i class="mdi mdi-cloud-upload"></i></a></li>
+        <li><a href="#upload-modal" data-target="upload-modal" ng-click="open()" class="white-text">Upload your CV <i class="mdi mdi-cloud-upload"></i></a></li>
         <li><a href="#!" class="white-text"></a></li>
     </ul>
 </div>
@@ -83,6 +83,32 @@
         </div>
     </div>
 </main>
+<div class="row">
+    <div class="col s12 l6 m6 modal offset-l3 offset-l3" id="upload-modal">
+        <div>
+            <div class="modal-content">
+                <h4 class="center">Upload your CV</h4>
+
+                <form class="upload-form" action="{{route('upload-cv')}}" enctype="multipart/form-data" method="post">
+                    <div class="input-field">
+                        <label for="name">Your Name: </label>
+                        <input id="name" name="name" type="text" required>
+                    </div>
+                    <div class="file-field input-field">
+                        <input class="file-path validate" type="text"/>
+                        <div class="btn">
+                            <span>File</span>
+                            <input type="file" name="cv" />
+                        </div>
+                    </div>
+                    <div class="input-field">
+                        <button class="btn waves-effect waves-light ">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 <footer class="page-footer">
     <div class="container">
         <div class="row">

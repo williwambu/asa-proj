@@ -5,7 +5,6 @@
 var app = angular.module('app', ['ngRoute']);
 
 app.config(['$routeProvider', function ($routeProvider) {
-    //$urlRouterProvider.otherwise('/');
     $routeProvider
         .when(
         '/', {
@@ -51,13 +50,18 @@ app.config(['$routeProvider', function ($routeProvider) {
             controller: 'loginCtrl'
 
         })
-
+        .when(
+            '/about',{
+                templateUrl:'templates/about.html',
+            controller:'homeCtrl'
+            }
+        )
         .otherwise(
         {
             redirectTo: '/'
+
         }
     );
-    //$locationProvider.html5Mode(true);
 }]);
 
 
@@ -99,7 +103,11 @@ app.controller('eventCtrl', ['$scope', '$http', '$routeParams','$sce', function 
 
 
 
-
+app.controller('portalCtrl',['$scope',function($scope){
+    $scope.open = function(){
+        $('#upload-modal').openModal()
+    }
+}]);
 
 app.controller('homeCtrl', ['$scope', '$http', function ($scope, $http) {
     /*events_url = API_URL + '/events/all';

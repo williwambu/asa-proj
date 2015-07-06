@@ -122,7 +122,7 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
         'Artdarek\OAuth\OAuthServiceProvider',
-
+        'Chumper\Zipper\ZipperServiceProvider',
 	),
 
 	/*
@@ -189,7 +189,8 @@ return array(
 		'URL'             => 'Illuminate\Support\Facades\URL',
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
-        'OAuth' => 'Artdarek\OAuth\Facade\OAuth',
+        'OAuth'           => 'Artdarek\OAuth\Facade\OAuth',
+        'Zipper'          => 'Chumper\Zipper\Zipper'
 	),
 
 );

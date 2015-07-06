@@ -2,6 +2,8 @@ $(document).ready(function(){
     $(".dropdown-button").dropdown({
         "hover":true
     });
+
+    $('.stream').css("height",300)
     $(".button-collapse").sideNav({
         menuWidth:200,
         edge:'left',

@@ -412,3 +412,11 @@ main.content-area{
     font-size: 1.1rem;
 }
 
+#twitter-widget-0{
+    height: 24rem !important;
+}
+.site-title{
+    position: relative;
+    left: 100px;
+    margin-top: 1.2rem;
+}
