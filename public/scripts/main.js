@@ -56,6 +56,15 @@ $(document).ready(function(){
         selectMonths: true, // Creates a dropdown to control month
         selectYears: 15 // Creates a dropdown of 15 years to control year
     });
+
+    (function (){
+        var menu_items = $('#nav-menu li a');
+        $.each(menu_items,function(index,item){
+            if(window.location.pathname == item.pathname){
+                $('#nav-menu li a[href="'+item.pathname+'"]').parent().addClass("active");
+            }
+        })
+    })()
 });
 
 var app = angular.module('app',[]);

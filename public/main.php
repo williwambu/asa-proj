@@ -54,9 +54,9 @@
                 </ul>
                 <!-- end sidebar -->
                 <!-- nav menu-->
-                <ul class="right hide-on-med-and-down">
+                <ul id="nav-menu" class="right hide-on-med-and-down">
                     <li class="white-text left site-title">
-                      <a href="/">Accounting Students Association</a>
+                      <a href="/">Accounting Students Association<span class="asa-tagline">Instilling Professionalism.</span></a>
                       
                     </li>
                     <li><a href="/">Home</a></li>

@@ -223,12 +223,17 @@ footer.page-footer {
 
 /* smalll screens */
 @media (max-width: 600px ) {
-
+    .eventstitle{
+        left: 2rem !important;
+    }
 }
 
 /* medium screens*/
 @media (max-width: 992px) {
+    .middle-img{
+        margin-right: 1rem;
 
+    }
 }
 
 /* larger screens*/
@@ -236,6 +241,10 @@ footer.page-footer {
     .profile {
         margin-left: 4rem !important;
         margin-right: 1.2rem !important;
+    }
+    .middle-img{
+        margin-right: 1rem;
+        margin-top: 3rem;
     }
 }
 
@@ -418,18 +427,26 @@ main.content-area{
     height: 24rem !important;
 }
 .site-title a{
+    top: -5px;
     position: relative;
-    left: -240px !important;
+    right: 275px !important;
     font-size: 1.8rem !important;
-    font-type:agency-fb;
+}
+.site-title.active{
+    background-color: #0099CB;
 }
 .site-title:hover{
   background-color: #0099CB;
 }
-.tagline{
-  font-style: italic;
-  font-size: 0.7px !important;
-  color: black;
+.asa-tagline{
+    font-size:1.1rem;
+    float: left;
+    position: relative;
+    top: 20px;
+
+    left: 200px;
+    font-style: italic;
+    color: #000000;
 }
 .slider{
   margin-top: 0px;
@@ -445,4 +462,59 @@ main.content-area{
 }
 .slider .indicators .indicator-item,.slider .indicators .indicator-item.active{
     border-radius: 50% !important;
+}
+.middle-img{
+    width: 27rem;
+    height: 100%;
+
+}
+.word-from{
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+.events-container{
+    height: 100%;
+    width: 100%;
+    background-color: #E6E8FA;
+}
+.events-container h6{
+    background-color: #0099CB;
+    padding: 1rem;
+    text-align: center;
+    color:#ffffff;
+    font-size: 1.4rem;
+}
+.eventsbox{
+    border-bottom: 1px solid #ffffff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.eventsbox:first-child{
+    border-top: none;
+}
+.eventsdate{
+    background-color: #781010;
+    font-weight: bold;
+    height: 60px;
+    line-height:20px;
+    padding: 15px;
+    text-align: center;
+    width: 60px;
+    color: #ffffff;
+    margin-left: 1rem;
+}
+.eventsday{
+    font-size: 22px;
+}
+.eventstitle{
+    padding-left: 10px;
+    width: 250px;
+    padding-top: 0px;
+    color: #000;
+    float: right;
+    top: -50px;
+    position: relative;
+    left: -5rem;
+    font-size: 1.1rem;
+    font-weight: 300;
 }

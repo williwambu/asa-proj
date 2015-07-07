@@ -86,9 +86,9 @@
             and opportunities such as subsidised fees to events and mentorship.
         </p>
     </div>
-    <div  class="col l3 m3 s12">
-        <a class="twitter-timeline" href="https://twitter.com/asauon" data-widget-id="617044216003317760">Tweets by
-            @asauon</a>
+    <div class="col l3 m3 s12">
+        <a class="twitter-timeline" href="https://twitter.com/asa_uon" data-widget-id="618369118773841920">Tweets by
+            @asa_uon</a>
         <script>!function (d, s, id) {
                 var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
                 if (!d.getElementById(id)) {
@@ -101,11 +101,50 @@
     </div>
 </div>
 <div class="row">
-    <div class="container">
-        <!--<div class="col s12 m3 l3">
-            <img class="middle-img " src="images/slider1.jpg"/>
+    <div class="col s12 m4 l4">
+        <img class="responsive-img middle-img " src="images/slider1.jpg"/>
+    </div>
+    <div class="col s12 m4 l4">
+        <h5>Word From the Chaiperson</h5>
+
+        <p class="word-from hoverable">
+            Lorem ipsum dolor sit amet, no legere legimus conclusionemque mei, id veri graecis ceteros vel, ea quo
+            senserit vulputate posidonium. Nemore philosophia ad vel, vis timeam probatus ea, ne epicuri assentior
+            inciderint pro. Per aeterno utroque eloquentiam ad, lorem facer ponderum ad eos. Ex qui tantas dictas
+            delicata, cum minimum invenire senserit at, euismod democritum an pro. Per soluta sensibus scripserit
+            te, sea legere pertinacia ei. An consul persecuti sea, viris everti ea duo.
+            <a href="#" class="btn waves-light waves-effect ">More..</a>
+        </p>
+    </div>
+    <div class="col s12 m4 l4">
+        <div class="events-container">
+            <h6>EVENT HIGHLIGHTS</h6>
+
+            <div class="eventsbox">
+                <div class="eventsdate">
+                    <span class="eventsday">15 Jul</span>
+                </div>
+                <a href="#" class="eventstitle">Event Title(Event for the title).</a>
+            </div>
+            <div class="eventsbox">
+                <div class="eventsdate">
+                    <span class="eventsday">15 Jul</span>
+                </div>
+                <a href="#" class="eventstitle">Event Title(Event for the title).</a>
+            </div>
+            <div class="eventsbox">
+                <div class="eventsdate">
+                    <span class="eventsday">15 Jul</span>
+                </div>
+                <a href="#" class="eventstitle">Event Title(Event for the title).</a>
+            </div>
+            <div class="eventsbox">
+                <div class="eventsdate">
+                    <span class="eventsday">15 Jul</span>
+                </div>
+                <a href="#" class="eventstitle">Event Title(Event for the title).</a>
+            </div>
         </div>
-        <div class="col s12"></div>-->
     </div>
 </div>
 <div class="row">
@@ -113,38 +152,38 @@
         <h4 class="black-text c-header">OUR SPONSORS</h4><span class="colored-line"></span>
     </div>
     <div class="container ">
-        <div class="col l2 m2 s6 ">
+        <div class="col l2 m2 s6 hoverable">
             <div class="sponser">
                 <a href="http://kasneb.or.ke"><img class="sponsors-img" src="../images/sponsors/kasneb.jpg"/></a>
             </div>
             <a href="http://kasneb.or.ke"><p class="black-text center sponsor-name">KASNEB</p></a>
         </div>
-        <div class="col l2 m2 s6 ">
+        <div class="col l2 m2 s6 hoverable">
             <div class="sponsor">
                 <a href="http://icpak.co.ke"><img class="sponsors-img" src="../images/sponsors/icpak.jpg"/></a>
             </div>
             <a href="http://icpak.or.ke"><p class="black-text center sponsor-name">ICPAK</p></a>
         </div>
-        <div class="col l2 m2 s6 ">
+        <div class="col l2 m2 s6 hoverable">
             <div class="sponser">
                 <a href="#"><img class="sponsors-img" src="../images/sponsors/youthfund.jpg"/></a>
             </div>
             <a href="#"><p class="black-text center sponsor-name">Youth Fund</p></a>
         </div>
-        <div class="col l2 m2 s6 ">
+        <div class="col l2 m2 s6 hoverable">
             <div class="sponsor">
                 <a href="#"><img class="sponsors-img" src="../images/sponsors/pkf.jpg"/></a>
             </div>
             <a href="#"><p class="black-text center sponsor-name">PKF</p></a>
         </div>
-        <div class="col l2 m2 s6 ">
+        <div class="col l2 m2 s6 hoverable">
             <div class="sponsor">
                 <a href="http://www.kpmg.com/africa/en/kpmg-in-africa/kenya/pages/default.aspx"><img
                         class="sponsors-img" src="../images/sponsors/kpmg.png"/></a>
             </div>
             <a href="#"><p class="black-text center sponsor-name">KPMG</p></a>
         </div>
-        <div class="col l2 m2 s6 ">
+        <div class="col l2 m2 s6 hoverable">
             <div class="sponsor">
                 <a href="#"><img class="sponsors-img" src="../images/sponsors/pwc.jpg"/></a>
             </div>
