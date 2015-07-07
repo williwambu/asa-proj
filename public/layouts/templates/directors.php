@@ -1,6 +1,6 @@
 <div class="container center">
     <div class="center">
-        <h4 class="black-text c-header">Head of Departments</h4><span class="colored-line"></span>
+        <h4 class="black-text c-header">ASA Council</h4><span class="colored-line"></span>
     </div>
     <div class="row ">
         <div class="col s12 m4 l4">

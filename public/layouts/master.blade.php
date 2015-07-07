@@ -2,7 +2,7 @@
 <html class="no-js">
   <head>
     <meta charset="utf-8">
-    <title>public</title>
+    <title>ASA Admin Panel</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
       <link rel="stylesheet" href="../bower_components/trumbowyg/dist/ui/trumbowyg.min.css">

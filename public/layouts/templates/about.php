@@ -1,6 +1,11 @@
 
 <div class="row center-align">
-    <div class="about header">About Us</div>
+    <h4 class="black-text c-header">About Us</h4>
+    <div class="l12 m12 s12">
+      <div class="container">
+        <img class="responsive-img" src="images/slider1.jpg">
+      </div>
+    </div>
     <div class="col l3 s12 m3 offset-l1 offset-m1">
         <div class="card blue lighten-2">
             <div class="card-content c-content white-text">
@@ -13,7 +18,7 @@
                     professionalism in accountancy.</p>
             </div>
         </div>
-    </div>
+      </div>
     <div class="col l3 s12 m3">
         <div class="card blue lighten-2">
             <div class="card-content c-content white-text">

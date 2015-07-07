@@ -1,4 +1,8 @@
 $(document).ready(function(){
+   $('.slider').slider({
+     height:570
+   });
+
     $(".dropdown-button").dropdown({
         "hover":true
     });
@@ -22,11 +26,8 @@ $(document).ready(function(){
             $("#result").slideUp();
         });
 
-    $(document).ready(function(){
         // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
         $('.modal-trigger').leanModal();
-
-    });
 
     var options = [
         {selector: '.navbar-wrappper', offset: 500, callback: 'changeColor(".nav-wrapper")' }

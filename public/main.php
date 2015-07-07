@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <base />
     <title>ASA | Accounting Students Association</title>
-    <meta name="description" content="Accounting Students Association">
+    <meta name="description" content="Accounting Students Association.ASA is a professional association of undergraduate students of the University of Nairobi, School of
+    Business, interested in proficiency in accounting.">
     <meta name="viewport" content="width=device-width initial-scale=1,maximum-scale=1.0, user-scalable=no">
     <link rel="shortcut icon" href="/favicon.ico">
 
@@ -27,7 +28,7 @@
                 <a href="/">
                     <img src="images/logo.jpg" class="brand-logo"/>
                 </a>
-                <h5 class="hide-on-med-and-down left site-title white-text">Accounting Students Association</h5>
+                <!-- side bar -->
                 <ul id="slide-out" class="side-nav right">
 
                     <li><a href="/">Home</a></li>
@@ -38,8 +39,8 @@
 
                                 <div class="collapsible-body">
                                     <ul>
-                                        <li><a href="/executive">Team 1</a></li>
-                                        <li><a href="/directors">Team 2</a></li>
+                                        <li><a href="/executive">Executive</a></li>
+                                        <li><a href="/directors">Council </a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -54,14 +55,17 @@
                 <!-- end sidebar -->
                 <!-- nav menu-->
                 <ul class="right hide-on-med-and-down">
-
+                    <li class="white-text left site-title">
+                      <a href="/">Accounting Students Association</a>
+                      
+                    </li>
                     <li><a href="/">Home</a></li>
                     <li><a class="dropdown-button" data-activates="team">ASA Team<i
                                 class="mdi-navigation-arrow-drop-down right"></i></a>
                         <ul id='team' class='dropdown-content'>
-                            <li><a href="/executive">Team 1</a></li>
+                            <li><a href="/executive">Executive</a></li>
                             <li class="divider"></li>
-                            <li><a href="/directors">Team 2</a></li>
+                            <li><a href="/directors">Council</a></li>
                         </ul>
                     </li>
                     <li><a href="/gallery">Gallery</a></li>
@@ -124,16 +128,16 @@
             <div class="col m4 l4 s12">
                 <h5 class="white-text">Site Links</h5>
                 <ul class="links">
-                    <li><a class="grey-text text-lighten-3 phone" ng-href="#gallery">
+                    <li><a class="grey-text text-lighten-3 phone" href="/gallery">
                             <i class="mdi mdi-link"></i>Gallery</a>
                     </li>
-                    <li><a class="grey-text text-lighten-3 " ng-href="#executive">
+                    <li><a class="grey-text text-lighten-3 " href="/executive">
                             <i class="mdi mdi-link"></i>Team/Executive</a>
                     </li>
-                    <li><a class="grey-text text-lighten-3 " ng-href="#directors">
+                    <li><a class="grey-text text-lighten-3 " href="/directors">
                             <i class="mdi mdi-link"></i>Team/Directors</a>
                     </li>
-                    <li><a class="grey-text text-lighten-3 " ng-href="#contact">
+                    <li><a class="grey-text text-lighten-3 " href="/contact-us">
                             <i class="mdi mdi-link"></i>Contact</a>
                     </li>
 
@@ -144,7 +148,7 @@
 
                 <div class="row">
                     <div class="sponsor-small col s4 l4 m4">
-                        <a href="#"><img class="sponsor-small-img" src="images/sponsors/kpmg.png"></a>
+                        <a href="http://www.kpmg.com/africa/en/kpmg-in-africa/kenya/pages/default.aspx"><img class="sponsor-small-img" src="images/sponsors/kpmg.png"></a>
                     </div>
                     <div class="sponsor-small col s4 l4 m4">
                         <a href="#"><img class="sponsor-small-img" src="images/sponsors/kasneb.png"></a>
@@ -162,18 +166,6 @@
                         <a href="#"><img class="sponsor-small-img" src="images/sponsors/icpak.jpg"></a>
                     </div>
                 </div>
-                <!-- <div class="row">
-                     <div class="col s12 l12 m12">
-                         Subscribe to our Mailing list for updates
-                         <form class="white-text">
-                             <div class="input-field">
-                                 <label class="">Email</label>
-                                 <input name="email" type="email" required>
-                                 <button class="btn waves-effect wave-light">subscribe</button>
-                             </div>
-                         </form>
-                     </div>
-                 </div>-->
             </div>
         </div>
     </div>
@@ -218,21 +210,5 @@
         h.appendChild(s)
     }
 </script>
-<script>window.twttr = (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0],
-            t = window.twttr || {};
-        if (d.getElementById(id)) return t;
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "https://platform.twitter.com/widgets.js";
-        fjs.parentNode.insertBefore(js, fjs);
-
-        t._e = [];
-        t.ready = function(f) {
-            t._e.push(f);
-        };
-
-        return t;
-    }(document, "script", "twitter-wjs"));</script>
 </body>
 </html>

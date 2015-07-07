@@ -13,17 +13,19 @@ nav ul a {
 
 .nav-wrapper {
     color: #000000 !important;
+
 }
 
 nav {
     background-color: #0099CB !important;
     z-index: 100000;
+      height: 64px !important;
 }
 
 .brand-logo {
     height: 100% !important;
     position: relative;
-    width: 70px;
+    width:80px;
 }
 
 .dropdown-content li > a, .dropdown-content li > span {
@@ -246,7 +248,7 @@ footer.page-footer {
     color: #0099CB !important;
 }
 .slider-content{
-    
+
 }
 #slider h5 {
     font-size: 1.8rem;
@@ -415,8 +417,32 @@ main.content-area{
 #twitter-widget-0{
     height: 24rem !important;
 }
-.site-title{
+.site-title a{
     position: relative;
-    left: 100px;
-    margin-top: 1.2rem;
+    left: -240px !important;
+    font-size: 1.8rem !important;
+    font-type:agency-fb;
+}
+.site-title:hover{
+  background-color: #0099CB;
+}
+.tagline{
+  font-style: italic;
+  font-size: 0.7px !important;
+  color: black;
+}
+.slider{
+  margin-top: 0px;
+}
+.slider .slides li img{
+  background-position: 0% 15% !important;
+}
+.sponsors-img:hover{
+  width: 10rem;
+}
+.slider .indicators .indicator-item{
+    background-color:#000000;
+}
+.slider .indicators .indicator-item,.slider .indicators .indicator-item.active{
+    border-radius: 50% !important;
 }

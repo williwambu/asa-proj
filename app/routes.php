@@ -11,6 +11,10 @@
 |
 */
 
+/*
+ * Site Routes
+ */
+
 Route::get('/',array('uses'=>'HomeController@showWelcome'));
 
 Route::get('executive',array('uses' => 'SiteRoutesController@executive'));

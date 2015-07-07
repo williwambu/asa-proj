@@ -17,6 +17,6 @@ class SiteRoutesController extends BaseController{
   }
 
   public function contact(){
-        return View::make('main') -> nest('child','layouts.templates.about');
+        return View::make('main') -> nest('child','layouts.templates.contact');
   }
 }

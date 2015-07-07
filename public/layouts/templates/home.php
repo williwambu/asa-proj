@@ -1,10 +1,40 @@
 <div class="row">
-    <ul class="bxslider" bxslider>
-        <li><img src="../images/slider/slider1.jpg" class="responsive-img"/></li>
-        <li><img src="../images/slider2.jpg" class="responsive-img"/></li>
-        <li><img src="../images/slider3.jpg" class="responsive-img"/></li>
-        <li><img src="../images/slider4.jpg" class="responsive-img"/></li>
-    </ul>
+    <div class="slider">
+        <ul class="slides">
+            <!--<li>
+              <img src="images/slider/slider1.jpg">
+              <div class="caption center-align">
+                <h3>A bigger decripition</h3>
+                <h5 class="light grey-text text-lighten-3">A smaller description</h5>
+              </div>
+            </li>-->
+            <li>
+                <img src="images/slider1.jpg">
+
+                <div class="caption left-align">
+                    <h3>A bigger descripition</h3>
+                    <h5 class="light grey-text text-lighten-3">A smaller description.</h5>
+                </div>
+            </li>
+            <li>
+                <img src="images/slider2.jpg">
+
+                <div class="caption right-align">
+                    <h3>A bigger description</h3>
+                    <h5 class="light grey-text text-lighten-3">A smaller description</h5>
+                </div>
+            </li>
+            <li>
+                <img src="images/slider3.jpg">
+
+                <div class="caption right-align">
+                    <h3>A bigger description</h3>
+                    <h5 class="light grey-text text-lighten-3">A smaller description</h5>
+                </div>
+            </li>
+        </ul>
+    </div>
+
 </div>
 <div class="row">
 
@@ -15,48 +45,7 @@
         </p>
     </div>
 </div>
-
-<!--<div class="row center-align">
-    <div class="col l3 s12 m3 offset-l1 offset-m1">
-        <div class="card blue lighten-2">
-            <div class="card-content c-content white-text">
-                <span class="card-title center">VISION</span>
-
-                <div class="promo center">
-                    <span class="mdi-social-school promo-icon"></span>
-                </div>
-                <p class="light">To be a leading students’ association recognized for creating, instilling and promoting
-                    professionalism in accountancy.</p>
-            </div>
-        </div>
-    </div>
-    <div class="col l3 s12 m3">
-        <div class="card blue lighten-2">
-            <div class="card-content c-content white-text">
-                <span class="card-title center">MISSION</span>
-
-                <div class="promo center">
-                    <span class="mdi-social-group promo-icon"></span>
-                </div>
-                <p class="light">To instill professionalism and promote interaction among students, professional firms,
-                    industrial and corporate enterprises in order to foster a broad understanding of what accounting is
-                    concerned with and to reconcile this with the academic pursuits of the members.</p>
-            </div>
-        </div>
-    </div>
-    <div class="col l3 s12 m3">
-        <div class="card blue lighten-2">
-            <div class="card-content c-content white-text">
-                <span class="card-title center">MOTTO</span>
-
-                <div class="promo center">
-                    <span class="mdi-social-domain  promo-icon"></span>
-                </div>
-                <p class="light">Instilling professionalism</p>
-            </div>
-        </div>
-    </div> -->
-</div> 
+</div>
 <div class="row">
     <div class="center">
         <h4 class="black-text c-header">GETTING INVOLVED</h4>
@@ -83,7 +72,7 @@
             To stay up to date with ASA events, you can join our announce mailing list.
             Like our <a href="#">Facebook page</a> to stay up to date with the latest information.
             You can also <a href="#login-modal" data-target="login-modal" ng-click="open()">login to our members
-            portal.</a>
+                portal.</a>
         </p>
     </div>
     <div class="col l3 m3 s12 center inv-container">
@@ -97,9 +86,26 @@
             and opportunities such as subsidised fees to events and mentorship.
         </p>
     </div>
-    <div id="twitter-wjs" class="col l3 m3 s12">
-        <a class="twitter-timeline" href="https://twitter.com/asauon" data-widget-id="617044216003317760">Tweets by @asauon</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    <div  class="col l3 m3 s12">
+        <a class="twitter-timeline" href="https://twitter.com/asauon" data-widget-id="617044216003317760">Tweets by
+            @asauon</a>
+        <script>!function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                if (!d.getElementById(id)) {
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = p + "://platform.twitter.com/widgets.js";
+                    fjs.parentNode.insertBefore(js, fjs);
+                }
+            }(document, "script", "twitter-wjs");</script>
+    </div>
+</div>
+<div class="row">
+    <div class="container">
+        <!--<div class="col s12 m3 l3">
+            <img class="middle-img " src="images/slider1.jpg"/>
+        </div>
+        <div class="col s12"></div>-->
     </div>
 </div>
 <div class="row">
@@ -109,39 +115,40 @@
     <div class="container ">
         <div class="col l2 m2 s6 ">
             <div class="sponser">
-                <img class="sponsors-img" src="../images/sponsors/kasneb.jpg"/>
+                <a href="http://kasneb.or.ke"><img class="sponsors-img" src="../images/sponsors/kasneb.jpg"/></a>
             </div>
-            <p class="black-text center sponsor-name">KASNEB</p>
+            <a href="http://kasneb.or.ke"><p class="black-text center sponsor-name">KASNEB</p></a>
         </div>
         <div class="col l2 m2 s6 ">
             <div class="sponsor">
-                <img class="sponsors-img" src="../images/sponsors/icpak.jpg"/>
+                <a href="http://icpak.co.ke"><img class="sponsors-img" src="../images/sponsors/icpak.jpg"/></a>
             </div>
-            <p class="black-text center sponsor-name">ICPAK</p>
+            <a href="http://icpak.or.ke"><p class="black-text center sponsor-name">ICPAK</p></a>
         </div>
         <div class="col l2 m2 s6 ">
             <div class="sponser">
-                <img class="sponsors-img" src="../images/sponsors/youthfund.jpg"/>
+                <a href="#"><img class="sponsors-img" src="../images/sponsors/youthfund.jpg"/></a>
             </div>
-            <p class="black-text center sponsor-name">Youth Fund</p>
+            <a href="#"><p class="black-text center sponsor-name">Youth Fund</p></a>
         </div>
         <div class="col l2 m2 s6 ">
             <div class="sponsor">
-                <img class="sponsors-img" src="../images/sponsors/pkf.jpg"/>
+                <a href="#"><img class="sponsors-img" src="../images/sponsors/pkf.jpg"/></a>
             </div>
-            <p class="black-text center sponsor-name">PKF</p>
+            <a href="#"><p class="black-text center sponsor-name">PKF</p></a>
         </div>
         <div class="col l2 m2 s6 ">
             <div class="sponsor">
-                <img class="sponsors-img" src="../images/sponsors/kpmg.png"/>
+                <a href="http://www.kpmg.com/africa/en/kpmg-in-africa/kenya/pages/default.aspx"><img
+                        class="sponsors-img" src="../images/sponsors/kpmg.png"/></a>
             </div>
-            <p class="black-text center sponsor-name">KPMG</p>
+            <a href="#"><p class="black-text center sponsor-name">KPMG</p></a>
         </div>
         <div class="col l2 m2 s6 ">
             <div class="sponsor">
-                <img class="sponsors-img" src="../images/sponsors/pwc.jpg"/>
+                <a href="#"><img class="sponsors-img" src="../images/sponsors/pwc.jpg"/></a>
             </div>
-            <p class="black-text center sponsor-name">Price Waterhouse Coopers</p>
+            <a href="#"><p class="black-text center sponsor-name">Price Waterhouse Coopers</p>
         </div>
     </div>
 </div>
